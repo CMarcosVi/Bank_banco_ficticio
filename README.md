@@ -7,6 +7,7 @@ Bank é um banco ficcional
 - VUE Router
 - CSS
 - API ( https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL,ETH-BRL,LTC-BRL,GBP-BRL )
+- RESPONSIVIDADE
 
 # Principais funcionalidades
 as principais funcionalidades desta aplicação 
