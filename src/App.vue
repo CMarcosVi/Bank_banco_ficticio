@@ -55,15 +55,11 @@ ul{
   font-style:normal;
   margin:1rem;
   list-style:none;
-  transition:1s;
-  
+  text-decoration:none;
+  transition:.5s;
 }
 .routerr:hover{
-  transition:1s;
-  background-image: linear-gradient(to right, #0f4, #0f4, #074);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
+  transition:.5s;
+  color:#0f5;
 }
 </style>

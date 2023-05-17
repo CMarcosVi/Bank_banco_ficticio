@@ -127,4 +127,26 @@ button:hover {
   color: #0f4;
   background-color: black;
 }
+@media screen and (max-width: 625px) {
+  .caixa {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .ciculos {
+    display: none;
+  }
+  .cartao {
+    height: 15rem;
+    width: 10rem;
+  }
+  .logodoCartao {
+    font-size: 1.5rem;
+  }
+  .cartao > img {
+    padding: 0.25rem;
+    margin-top: 7rem;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
 </style>
