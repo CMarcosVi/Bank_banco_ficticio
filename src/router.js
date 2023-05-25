@@ -1,13 +1,15 @@
-import {createRouter , createWebHistory} from "vue-router";
-import Home from "/components/Home.vue";
-import Cotacao from "/components/Cotacao.vue";
-import CompenteAcoes from "/components/CompenteAcoes.vue";
+import { createRouter, createWebHistory } from "vue-router";
+import Home from "/rotas/Home.vue";
+import Cotacao from "/rotas/Cotacao.vue";
+import CompenteAcoes from "/rotas/CompenteAcoes.vue";
+import CriarConta from "/rotas/CriarConta.vue";
+import Login from "/rotas/Login.vue";
 
 const routes = [
   {
-  path: "/",
-  name: "Home",
-  component: Home
+    path: "/",
+    name: "Home",
+    component: Home
   },
   {
     path: "/cotacao",
@@ -15,11 +17,21 @@ const routes = [
     component: Cotacao
   },
 
-{
-  path: "/CompenteAcoes",
-  name: "CompenteAcoes",
-  component: CompenteAcoes
-},
+  {
+    path: "/CompenteAcoes",
+    name: "CompenteAcoes",
+    component: CompenteAcoes
+  },
+  {
+    path: "/criarConta",
+    name: "CriarConta",
+    component: CriarConta
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login
+  }
 ];
 
 const router = createRouter({
