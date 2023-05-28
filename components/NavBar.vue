@@ -1,8 +1,9 @@
 <template>
   <nav class="navbar">
-    <h1 class="projetoNome">BanK 2.0</h1>
+    <h1 class="projetoNome">BANK 2.0</h1>
     <ul class="nav-list" :class="{ active: NavbarOpen }">
       <router-link class="routerr" to="/">Home</router-link>
+      <router-link class="routerr" to="/cartoes">Cartões</router-link>
       <router-link class="routerr" to="/Cotacao">Cotação</router-link>
       <router-link class="routerr" to="/CompenteAcoes">Ações</router-link>
     </ul>
@@ -32,16 +33,14 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .navbar {
   display: flex;
   justify-content: space-around;
   background-image: linear-gradient(180deg, #000, #0000);
 }
 .projetoNome {
-  font-weight: 600;
-  font-style: italic;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Megrim', cursive;
   background-image: linear-gradient(to right, #0f4, #0f4, #074);
   background-clip: text;
   -webkit-background-clip: text;
@@ -117,7 +116,7 @@ router-view {
   color: #0f5;
 }
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 750px) {
   .nav-list {
     display: none;
   }

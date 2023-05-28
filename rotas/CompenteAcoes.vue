@@ -194,6 +194,7 @@ export default {
   padding: 0;
 }
 .acoes {
+  padding-top: 2rem;
   font-family: "Kanit", sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr;

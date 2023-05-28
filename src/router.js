@@ -4,6 +4,7 @@ import Cotacao from "/rotas/Cotacao.vue";
 import CompenteAcoes from "/rotas/CompenteAcoes.vue";
 import CriarConta from "/rotas/CriarConta.vue";
 import Login from "/rotas/Login.vue";
+import Cartoes from "/rotas/Cartoes.vue";
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
     path: "/login",
     name: "Login",
     component: Login
+  },
+  {
+    path: "/cartoes",
+    name: "Cartoes",
+    component: Cartoes
   }
 ];
 

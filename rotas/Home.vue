@@ -58,9 +58,9 @@ export default {
   -webkit-text-fill-color: transparent;
 }
 .cartao {
-  background-color: #000;
+  background: radial-gradient(circle at right top, #111, #000);
   position: relative;
-  font-family: "Kanit", sans-serif;
+  font-family: "Megrim", cursive;
   text-align: center;
   height: 20rem;
   width: 15rem;
@@ -153,6 +153,7 @@ export default {
 .titulo1 {
   color: #0f4;
   font-family: "Kanit", sans-serif;
+  font-family: "Megrim", cursive;
   font-weight: 600;
   font-size: 3rem;
 }
@@ -160,6 +161,7 @@ export default {
   color: #fff;
   text-shadow: 0.1em 0.1em 0.2em #051;
   font-family: "Kanit", sans-serif;
+  font-family: "Megrim", cursive;
   font-style: italic;
   font-weight: 600;
   font-size: 3rem;
@@ -214,9 +216,10 @@ export default {
     border: #fff solid 1px;
     transition: 1s;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-decoration: none;
-    font-family: "Kanit", sans-serif;
+    font-family: "Megrim", cursive;
+    letter-spacing: 1px;
     margin: 3rem;
   }
   .logar2 {
@@ -225,17 +228,25 @@ export default {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     cursor: pointer;
     margin: 0rem 1rem;
     border: none;
     text-decoration: none;
-    font-family: "Kanit", sans-serif;
+    font-family: "Megrim", cursive;
+    letter-spacing: 1px;
+    transition: 1s;
+  }
+  .logar2:hover {
+    background-image: linear-gradient(to right, #0f4, #0f4, #074);
+    letter-spacing: 0px;
+    transition: 1s;
   }
   .criarConta2:hover {
     background-color: #000;
     color: #0f5;
     border-color: #0f5;
+    letter-spacing: 0px;
     transition: 1s;
   }
   .ciculos {

@@ -12,7 +12,6 @@
     </div>
     <div class="div">
       <div class="divCotacao">
-        <h1 class="tituloCotacao">Conversão de moedas</h1>
         <div class="valorMostrado">
           <p class="moeda"></p>
           {{
@@ -134,7 +133,7 @@ export default {
   padding-left: 3rem;
   padding-right: 3rem;
   align-items: center;
-  height: 90.5vh;
+  height: 100vh;
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 1) 50%,
@@ -176,6 +175,7 @@ export default {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: 3rem;
 }
 @media screen and (max-width: 1000px) {
   .cotacao {
@@ -202,7 +202,7 @@ export default {
   }
   .div {
     padding: 3rem;
-    margin: 1rem;
+    margin: 6rem 0rem;
   }
 }
 </style>
