@@ -193,6 +193,7 @@ export default {
   transition: 1s;
   cursor: pointer;
   font-size: 1rem;
+  font-family: "Megrim", cursive;
 }
 .enviarForm:hover {
   background-color: #000;

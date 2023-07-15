@@ -10,6 +10,7 @@
       <input class="campoInputs" type="Number" />
       <label class="labelDosInputs">Senha</label>
       <input class="campoInputs" type="password" />
+      <router-link to="/AreaDoCliente" class="entrar">Entrar</router-link>
     </form>
     <router-link class="voltarHomeLogin" to="/">←</router-link>
   </section>
@@ -91,6 +92,24 @@ export default {
   text-decoration: none;
 }
 .voltarHomeLogin:hover {
+  background-color: #0f5;
+  color: #000;
+  transition: 1s;
+}
+.entrar {
+  text-align:center;
+  text-decoration:none;
+  margin: 1rem auto;
+  width: 5rem;
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: #0f5;
+  border: solid 2px #0f5;
+  border-radius: 1rem;
+  transition: 1s;
+  font-family: "Megrim", cursive;
+}
+.entrar:hover {
   background-color: #0f5;
   color: #000;
   transition: 1s;

@@ -1,47 +1,51 @@
 <template>
   <NavBar />
-  <div class="acoes">
-    <div class="separado" v-for="(value, key) in acoes" :key="key">
-      <h1 class="acaoNome">{{ value.nome }}</h1>
-      <h2>{{ value.sigla }}</h2>
-      <div class="containerReal">
-        <p class="real">R$</p>
-        {{ value.preco.toFixed(2) }}
-      </div>
-      <p>{{ value.variacao.toFixed(2) }}%</p>
-      <div class="containerReal">
-        <p class="real">R$</p>
-        {{ value.ultimoDividendo.toFixed(2) }}
-      </div>
-      <div class="calculos">
-        <label :for="`quantidadeDeCotas-${key}`">Quantidade de cotas:</label>
-        <input
-          :id="`quantidadeDeCotas-${key}`"
-          type="number"
-          v-model="value.quantidadeDeCotas"
-        />
-        <button class="botaoCalculo" @click="calcularCota(value)">
-          Calcular
-        </button>
-        <div class="containerReal" v-if="value.valorCotaFinal">
-          Valor total:
+  <div class="areaDeacoes">
+    <h1 class="acoesAreaNome">Ações</h1>
+    <div class="acoes">
+      <div class="separado" v-for="(value, key) in acoes" :key="key">
+        <h1 class="acaoNome">{{ value.nome }}</h1>
+        <h2>{{ value.sigla }}</h2>
+        <div class="containerReal">
           <p class="real">R$</p>
-          {{
-            value.valorCotaFinal.toLocaleString("pt-BR", {
-              style: "currency",
-              currency: "BRL",
-            })
-          }}
+          {{ value.preco.toFixed(2) }}
         </div>
-        <div class="containerReal" v-if="value.dividendoFinal">
-          Dividendos:
+        <p>{{ value.variacao.toFixed(2) }}%</p>
+        <div class="containerReal">
           <p class="real">R$</p>
-          {{
-            value.dividendoFinal.toLocaleString("pt-BR", {
-              style: "currency",
-              currency: "BRL",
-            })
-          }}
+          {{ value.ultimoDividendo.toFixed(2) }}
+        </div>
+        <div class="calculos">
+          <label :for="`quantidadeDeCotas-${key}`">Quantidade de cotas:</label>
+          <input
+            :id="`quantidadeDeCotas-${key}`"
+            type="number"
+            v-model="value.quantidadeDeCotas"
+            min="0"
+          />
+          <button class="botaoCalculo" @click="calcularCota(value)">
+            Calcular
+          </button>
+          <div class="containerReal" v-if="value.valorCotaFinal">
+            Valor total:
+            <p class="real">R$</p>
+            {{
+              value.valorCotaFinal.toLocaleString("pt-BR", {
+                style: "currency",
+                currency: "BRL",
+              })
+            }}
+          </div>
+          <div class="containerReal" v-if="value.dividendoFinal">
+            Dividendos:
+            <p class="real">R$</p>
+            {{
+              value.dividendoFinal.toLocaleString("pt-BR", {
+                style: "currency",
+                currency: "BRL",
+              })
+            }}
+          </div>
         </div>
       </div>
     </div>
@@ -172,15 +176,24 @@ export default {
 };
 </script>
 <style>
-.titulo {
+.acoesAreaNome {
+  text-align: center;
+  padding: 5rem;
+  font-family: "Megrim", cursive;
+  background-image: linear-gradient(to right, #0f4, #0f4, #074);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.areaDeacoes {
   background: linear-gradient(
     62deg,
-    rgba(0, 255, 68, 1) 25%,
+    rgba(0, 111, 0, 0) 25%,
     rgba(0, 0, 0, 1) 25%,
     rgba(68, 68, 68, 1) 37%,
     rgba(0, 0, 0, 1) 50%,
-    rgba(0, 255, 68, 1) 50%,
-    rgba(0, 255, 68, 1) 75%,
+    rgba(0, 111, 0, 0) 50%,
+    rgba(0, 111, 0, 0) 75%,
     rgba(0, 0, 0, 1) 75%,
     rgba(68, 68, 68, 1) 86%
   );
@@ -197,21 +210,7 @@ export default {
   padding-top: 2rem;
   font-family: "Kanit", sans-serif;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  background: rgb(0, 255, 68);
-  background: linear-gradient(
-    62deg,
-    rgba(0, 255, 68, 1) 25%,
-    rgba(0, 0, 0, 1) 25%,
-    rgba(68, 68, 68, 1) 37%,
-    rgba(0, 0, 0, 1) 50%,
-    rgba(0, 255, 68, 1) 50%,
-    rgba(0, 255, 68, 1) 75%,
-    rgba(0, 0, 0, 1) 75%,
-    rgba(68, 68, 68, 1) 86%
-  );
-  animation: AnimationName 30s ease infinite;
-  background-size: 400% 400%;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .separado {
   display: flex;
@@ -237,7 +236,19 @@ export default {
   display: flex;
 }
 .botaoCalculo {
+  background-color: #000;
+  color: #0f4;
+  border-style: none;
+  border: solid 1px #0f5;
   margin: 0.5rem;
+  padding: 0.5rem 0rem;
+  border-radius: 0.5rem;
+  transition: 1s;
+}
+.botaoCalculo:hover {
+  color: #000;
+  background-color: #0f4;
+  transition: 1s;
 }
 @keyframes AnimationName {
   0% {

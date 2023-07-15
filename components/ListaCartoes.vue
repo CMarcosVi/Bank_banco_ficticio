@@ -92,6 +92,9 @@ export default {
 </script>
 
 <style scoped>
+.projetoNome {
+  font-size: 2rem;
+}
 .logoEmpresarial {
   color: #000;
 }

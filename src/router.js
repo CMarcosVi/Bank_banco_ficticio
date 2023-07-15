@@ -5,6 +5,7 @@ import CompenteAcoes from "/rotas/CompenteAcoes.vue";
 import CriarConta from "/rotas/CriarConta.vue";
 import Login from "/rotas/Login.vue";
 import Cartoes from "/rotas/Cartoes.vue";
+import AreaDoCliente from "/areaDoCliente/areaDoCliente.vue";
 
 const routes = [
   {
@@ -37,6 +38,11 @@ const routes = [
     path: "/cartoes",
     name: "Cartoes",
     component: Cartoes
+  },
+  {
+    path: "/areaDoCliente",
+    name: "AreaDoCliente",
+    component: AreaDoCliente
   }
 ];
 

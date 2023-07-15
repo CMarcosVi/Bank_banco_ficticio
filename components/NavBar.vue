@@ -40,6 +40,7 @@ export default {
   background-image: linear-gradient(180deg, #000, #0000);
 }
 .projetoNome {
+  font-size:1rem;
   font-family: 'Megrim', cursive;
   background-image: linear-gradient(to right, #0f4, #0f4, #074);
   background-clip: text;
