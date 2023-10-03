@@ -97,8 +97,6 @@ export default {
   transition: 1s;
 }
 .entrar {
-  text-align:center;
-  text-decoration:none;
   margin: 1rem auto;
   width: 5rem;
   padding: 0.5rem 1rem;
@@ -107,7 +105,6 @@ export default {
   border: solid 2px #0f5;
   border-radius: 1rem;
   transition: 1s;
-  font-family: "Megrim", cursive;
 }
 .entrar:hover {
   background-color: #0f5;

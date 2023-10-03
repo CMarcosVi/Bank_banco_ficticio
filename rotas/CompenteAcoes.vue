@@ -211,6 +211,8 @@ export default {
   font-family: "Kanit", sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  overflow: scroll;
 }
 .separado {
   display: flex;
