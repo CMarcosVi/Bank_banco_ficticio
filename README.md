@@ -5,7 +5,12 @@ Bank é um banco ficcional
 # Tecnologias
 - VUE
 - VUE Router
-- CSS
+- SCSS
+- AXIOS
+- VITEST(Em espera...)
+- PHP(Em espera...)
+- MySQL(Em espera...)
+- NUXT.JS 3 (Em espera...)
 - API ( https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL,ETH-BRL,LTC-BRL,GBP-BRL )
 - RESPONSIVIDADE
 
