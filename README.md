@@ -5,7 +5,8 @@ Bank é um banco ficcional
 # Tecnologias
 - VUE
 - VUE Router
-- SCSS
+- CSS(Bank 3.0)
+- SCSS (Bank 4.0)
 - AXIOS
 - VITEST(Em espera...)
 - PHP(Em espera...)
