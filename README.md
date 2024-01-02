@@ -8,7 +8,6 @@ Bank é um banco ficcional
 - CSS(Bank 3.0)
 - SCSS (Bank 4.0)
 - AXIOS
-- VITEST(Em espera...)
 - PHP(Em espera...)
 - MySQL(Em espera...)
 - NUXT.JS 3 (Em espera...)
